@@ -24,14 +24,14 @@ export default function Home() {
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            🌍 Laddrressa.ai
+          <h1 className="text-5xl font-bold text-gray-900 mb-4">
+            🚀 Laddrressa.ai - LIVE NOW
           </h1>
-          <p className="text-xl text-gray-600 mb-2">
-            AI-Powered Global Business Discovery
+          <p className="text-2xl text-blue-600 font-semibold mb-2">
+            Global Business Discovery Platform
           </p>
-          <p className="text-md text-gray-500">
-            Find local businesses across all countries and industries
+          <p className="text-lg text-gray-600">
+            Search businesses worldwide - Version 2.0 - {new Date().toLocaleString()}
           </p>
         </div>
 
