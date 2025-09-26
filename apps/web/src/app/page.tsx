@@ -11,11 +11,11 @@ export default function Home() {
           </p>
           <div className="bg-white rounded-lg shadow-lg p-8 max-w-2xl mx-auto">
             <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-              🚀 Deployment Successful!
+              🚀 Laddrressa.ai is Live!
             </h2>
             <p className="text-gray-600">
-              Your Laddrressa.ai application is now live on Cloudflare Pages.
-              Start building amazing local business discovery experiences.
+              Build timestamp: {new Date().toISOString()}<br/>
+              Ready to discover local businesses with AI-powered search!
             </p>
           </div>
         </div>
