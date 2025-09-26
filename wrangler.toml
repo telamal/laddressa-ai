@@ -1,7 +1,0 @@
-# wrangler.toml
-name = 'laddressa-ai'
-compatibility_date = "2024-01-01"
-
-# Cloudflare Pages configuration
-[env.production]
-vars = { NODE_ENV = "production" }
