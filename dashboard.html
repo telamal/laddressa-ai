@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Laddressa.ai</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <header class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold text-blue-600">Laddressa.ai Dashboard</h1>
+                <div class="flex space-x-4">
+                    <span id="userEmail" class="text-gray-600">user@example.com</span>
+                    <button onclick="window.location.href='index.html'" class="text-blue-600">Back</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <div class="bg-white rounded-lg shadow p-6">
+            <h2 class="text-2xl font-bold mb-4">Search Results</h2>
+            <div id="results" class="space-y-4"></div>
+            <button onclick="exportCSV()" class="mt-4 bg-green-600 text-white px-4 py-2 rounded-lg">Export CSV</button>
+        </div>
+    </main>
+
+    <script>
+        // Simulate fetching data
+        window.onload = function() {
+            const address = localStorage.getItem('searchAddress') || 'Sample Address';
+            document.getElementById('results').innerHTML = `
+                <div class="border p-4 rounded">
+                    <h3 class="font-bold">Business: Tech Company Inc</h3>
+                    <p>Address: ${address}</p>
+                    <p>Employees: 50-100</p>
+                    <p>Industry: Technology</p>
+                    <p>Lead Score: 85/100</p>
+                </div>
+            `;
+        };
+
+        function exportCSV() {
+            alert('CSV export feature - Professional plan required');
+        }
+    </script>
+</body>
+</html>

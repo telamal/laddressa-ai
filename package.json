@@ -1,0 +1,13 @@
+{
+  "name": "laddressa-ai",
+  "version": "1.0.0",
+  "description": "AI-Powered Address Intelligence Platform",
+  "scripts": {
+    "dev": "wrangler pages dev . --compatibility-date=2024-01-01",
+    "deploy-worker": "wrangler deploy api-worker.js",
+    "deploy-pages": "wrangler pages deploy . --project-name=laddressa-ai"
+  },
+  "devDependencies": {
+    "wrangler": "^3.48.0"
+  }
+}

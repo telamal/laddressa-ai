@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laddressa.ai - AI-Powered Address Intelligence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <header class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold text-blue-600">Laddressa.ai</h1>
+                <button onclick="window.location.href='dashboard.html'" class="bg-blue-600 text-white px-4 py-2 rounded-lg">Dashboard</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <div class="text-center py-16">
+            <h2 class="text-4xl font-bold mb-4">Address Intelligence Platform</h2>
+            <p class="text-xl text-gray-600 mb-8">Transform addresses into business insights</p>
+            <div class="max-w-2xl mx-auto">
+                <input type="text" id="searchInput" placeholder="Enter business address..." class="w-full p-4 border rounded-lg">
+                <button onclick="search()" class="mt-4 bg-blue-600 text-white px-8 py-3 rounded-lg">Search</button>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function search() {
+            const address = document.getElementById('searchInput').value;
+            if(address) {
+                localStorage.setItem('searchAddress', address);
+                window.location.href = 'dashboard.html';
+            }
+        }
+    </script>
+</body>
+</html>
