@@ -2,10 +2,5 @@
 name = 'laddressa-ai'
 compatibility_date = "2024-01-01"
 
-# Cloudflare Pages configuration
-pages_build_output_dir = "apps/web/out"
-
 [env.production.vars]
 NODE_ENV = "production"
-RAPIDAPI_KEY = "80f60ed0a9mshe8e73fb42c00c33p15bca5jsn295aaf5c4976"
-RAPIDAPI_HOST = "local-business-search.p.rapidapi.com"
